@@ -15,7 +15,7 @@ contract CorsaPiquet is ERC721, ERC721URIStorage, Pausable, AccessControl, ERC72
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("Corsa Piquet", "CPQT") {
+    constructor() ERC721("Cafeteira Expressa", "CPQT") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(PAUSER_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
