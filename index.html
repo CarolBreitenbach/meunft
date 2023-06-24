@@ -45,7 +45,7 @@
           alert("O Metamask irá pedir aprovação para acessar essa página.\nPor favor, aceite.");
           signer = await provider.getSigner();
           network = await provider.getNetwork();
-          contract = new ethers.Contract("0xd4776F573C8E5D90e3E8D52c7b8472347D4c84Be", abi, provider);
+          contract = new ethers.Contract("0x4d0de81099AB483B9261307FEf663C1B2F368504", abi, provider);
           console.log("selected provider: ", provider);
           console.log("network:", network);
           console.log("signer: ", signer);
